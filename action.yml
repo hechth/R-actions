@@ -17,6 +17,6 @@ runs:
   using: 'bash'
   main: 'entrypoint.sh'
   args:
-    - 
+    - ${{inputs.action}}
     - ${{inputs.needsBioc}}
     - ${{inputs.buildSubDirectory}}
