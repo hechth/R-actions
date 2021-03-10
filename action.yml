@@ -16,5 +16,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ./entrypoint.sh ${{inputs.action}} ${{inputs.needsBioc}} ${{inputs.buildSubDirectory}}
+    - run: ${{ github.action_path }}/entrypoint.sh ${{inputs.action}} ${{inputs.needsBioc}} ${{inputs.buildSubDirectory}}
       shell: bash
