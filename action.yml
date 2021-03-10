@@ -14,8 +14,9 @@ inputs:
     description: 'The path saving source code of package in repository'
     default: './'
 runs:
+  using: 'bash'
   main: 'entrypoint.sh'
   args:
-    - ${{inputs.action}}
+    - 
     - ${{inputs.needsBioc}}
     - ${{inputs.buildSubDirectory}}
